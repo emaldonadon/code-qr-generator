@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Grid, Paper, Box, Typography, TextField, Button } from '@mui/material';
 import QRCode from "react-qr-code";
+import '../Pages/todo.Main.css'
 
 
 export const Main = () => {
@@ -15,7 +16,7 @@ export const Main = () => {
 
     return (
         <div>
-            <Box sx={{ textAlign: 'center', fontWeight: 'bold', fontSize: '30px', my: 2 }}>
+            <Box sx={{ textAlign: 'center', fontWeight: 'bold', fontSize: '30px', my: 2, color: '#36220b' }}>
                 GENERADOR DE CÓDIGO QR
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'center', gap: '16px', my: 4 }}>
@@ -61,6 +62,9 @@ export const Main = () => {
                     </Grid>
                 </Paper>
             </Box>
+            <footer style={{ backgroundColor: '#eee', padding: '5px', textAlign: 'center' }}>
+                © {new Date().getFullYear()} Eduardo / <a href="https://github.com/emaldonadon" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </footer>
         </div>
     )
 }
