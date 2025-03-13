@@ -30,7 +30,7 @@ export const Main = () => {
                     <Grid container spacing={2} alignItems="center" justifyContent="center">
                         <Grid item xs={12}>
                             <Typography variant="h5" align="center" color="textPrimary" fontWeight="bold">
-                                Escriba el producto a convertir en QR
+                             Ingresa una URL o texto para generar un código QR
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
